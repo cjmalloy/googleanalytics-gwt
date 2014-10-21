@@ -19,6 +19,7 @@ public class ExternalLink extends Anchor
         setHref(url);
     }
     
+    @Override
     public void setHref(final String url)
     {
         super.setHref(url);
