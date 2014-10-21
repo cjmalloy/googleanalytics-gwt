@@ -38,17 +38,17 @@ public class GoogleAnalytics
 
     public static void trackHistoryEvent(String historyToken)
     {
-        sendEvent("gwt-history", "click", historyToken);
+        sendEvent("gwt-history", "click", historyToken, 1);
     }
 
     public static void trackOutboundLink(String url)
     {
-        sendEvent("outbound", "click", url);
+        sendEvent("outbound", "click", url, 1);
     }
 
     public static void trackOutboundLink(String url, HitCallback callback)
     {
-        sendEvent("outbound", "click", url, callback);
+        sendEvent("outbound", "click", url, 1, callback);
     }
 
     public static interface HitCallback
