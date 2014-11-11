@@ -11,14 +11,14 @@ import com.google.gwt.user.client.ui.Anchor;
 public class ExternalLink extends Anchor
 {
     private HandlerRegistration clickReg = null;
-    
+
     public ExternalLink() {}
 
     public ExternalLink(String url)
     {
         setHref(url);
     }
-    
+
     @Override
     public void setHref(final String url)
     {
