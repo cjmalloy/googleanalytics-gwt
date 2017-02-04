@@ -1,23 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project
-  xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
-  <!-- POM file generated with GWT webAppCreator -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.cjmalloy</groupId>
+
+  <parent>
+    <groupId>com.cjmalloy</groupId>
+    <artifactId>cjmalloy</artifactId>
+    <version>0.1</version>
+  </parent>
+
   <artifactId>googleanalytics-gwt</artifactId>
   <packaging>jar</packaging>
   <version>1.1</version>
   <name>GWT Google Analytics</name>
+  <url>https://github.com/cjmalloy/googleanalytics-gwt</url>
+
+  <scm>
+    <connection>scm:git:git://github.com/cjmalloy/googleanalytics-gwt.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/cjmalloy/googleanalytics-gwt.git</developerConnection>
+    <url>http://github.com/cjmalloy/googleanalytics-gwt</url>
+    <tag>master</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/cjmalloy/googleanalytics-gwt/issues</url>
+  </issueManagement>
+
+  <distributionManagement>
+    <site>
+      <id>cjmalloy.github.io/googleanalytics-gwt</id>
+      <url>https://cjmalloy.github.io/googleanalytics-gwt</url>
+    </site>
+  </distributionManagement>
 
   <properties>
     <maven.compiler.target>1.7</maven.compiler.target>
     <maven.compiler.source>1.7</maven.compiler.source>
     <!-- Convenience property to set the GWT version -->
     <gwtVersion>2.6.1</gwtVersion>
-    <!-- GWT needs at least java 1.5 -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -73,7 +93,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute />
+                    <execute/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -83,5 +103,4 @@
       </plugins>
     </pluginManagement>
   </build>
-
 </project>
